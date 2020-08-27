@@ -1,0 +1,55 @@
+body {
+	font-family: 'Pacifico', cursive;
+}
+
+.container, .controls, .title{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+.controls > div {
+	padding: 10px;
+}
+
+.controls > div > input.range {
+	vertical-align: middle;
+}
+
+.controls > div > label {
+	font-weight:bold;
+}
+
+.container > div {
+	margin: 10px;
+	height:10vh;
+	width:30%;
+	border-radius:20px;
+}
+
+.boxes {
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  text-align:center;
+}
+
+.boxes  > .b-lbl {
+	 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	 color:white;
+	 display:none;
+}
+
+.boxes:hover {
+  transform: scale(1.1);
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+}
+
+.b-lbl-show {
+	display:block !important;
+}
